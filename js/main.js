@@ -2,6 +2,7 @@
 // FUNCTIONS
 
 function createGame( boardElement, nCell){
+  boardElement.innerHTML= "";
   for( let i=1; i<=100; i++) {
     const boardCell = document.createElement("div");
     boardCell.innerHTML = i;
@@ -15,8 +16,10 @@ function createGame( boardElement, nCell){
   } 
 }
 
-const boardContainer = document.querySelector(".board");
-boardContainer.innerHTML= "";
-const totBomb=49;
+document.getElementById("play").addEventListener("click", function () {
+    const boardContainer = document.querySelector(".board");
+    const totBomb=49;
+    createGame(boardContainer, totBomb);
+})
 
-createGame(boardContainer, totBomb);
+

@@ -1,0 +1,20 @@
+
+.container-header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.25rem;
+}
+.container-logo{
+    display: flex;
+    align-items: center;
+}
+.logo{
+    width: 10%;
+    padding-right: 0.625rem;
+}
+.btn{
+    padding: 0 1.25rem;
+    height: 50%;
+}

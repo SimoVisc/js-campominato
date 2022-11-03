@@ -1,6 +1,8 @@
 "use strict"
 // FUNCTIONS
 
+
+
 function createGame( boardElement, nCell){
   boardElement.innerHTML= "";
   for( let i=1; i<=100; i++) {
@@ -22,4 +24,14 @@ document.getElementById("play").addEventListener("click", function () {
     createGame(boardContainer, totBomb);
 })
 
+function getRandomInt(min, max) {
+    return Math.floor(Math.random() * (max-min+1) + min);
+}
+
+const bomb = getRandomInt(1, 100);
+let i= 1;
+while(i <= 100){
+
+i++;
+}
 

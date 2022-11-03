@@ -19,8 +19,8 @@ function createGame( boardElement, nCell){
 }
 
 document.getElementById("play").addEventListener("click", function () {
-    const boardContainer = document.querySelector(".board");
-    const totBomb=49;
+    const boardContainer = document.querySelector(".board")
+    const totBomb = 49;
     createGame(boardContainer, totBomb);
 })
 
@@ -30,8 +30,13 @@ function getRandomInt(min, max) {
 
 const bomb = getRandomInt(1, 100);
 let i= 1;
-while(i <= 100){
 
-i++;
+while(i <= 100){
+    bomb += boardCell[i]
+    i++;
 }
+if(bomb === boardCell ){
+    return true;
+}
+return false;
 
